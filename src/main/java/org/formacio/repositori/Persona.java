@@ -1,7 +1,10 @@
 package org.formacio.repositori;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@XmlRootElement
 public class Persona {
 	
 	private String clau;

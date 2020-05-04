@@ -29,7 +29,8 @@ public class MockController {
 		return servei_agenda.recupera(id).getTelefon();
 	}
 	
-	@RequestMapping(path = "/contacte/{id}", produces= {MediaType.APPLICATION_JSON_VALUE})
+	@RequestMapping(path = "/contacte/{id}", produces= {MediaType.APPLICATION_JSON_VALUE,
+														MediaType.APPLICATION_XML_VALUE})
 	@ResponseBody
 	public Persona contacte(@PathVariable String id ) {
 		return servei_agenda.recupera(id);
