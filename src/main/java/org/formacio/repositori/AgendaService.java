@@ -30,4 +30,8 @@ public class AgendaService {
 	public int nombreContactes() {
 		return bbdd.size();
 	}
+	
+	public Map<String, Persona> getBD() {
+		return bbdd;
+	}
 }
